@@ -26,7 +26,7 @@ public class Main {
             numberGuesses++;
 
         }
-        System.out.println("You guessed" + numberGuesses "times.");
+        System.out.println("You guessed " + numberGuesses + " times.");
     }
 
 }
