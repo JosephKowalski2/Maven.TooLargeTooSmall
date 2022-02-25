@@ -11,6 +11,7 @@ public class Main {
         int guessNumber = 2;
         int userNumber = 0;
         int numberGuesses = 0;
+        int [] guessesArray = new int[10];
         while (guessNumber != userNumber) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter a number between 1 and 10");
