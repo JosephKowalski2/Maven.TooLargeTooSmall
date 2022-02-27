@@ -1,4 +1,7 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -11,23 +14,25 @@ public class Main {
         int guessNumber = 2;
         int userNumber = 0;
         int numberGuesses = 0;
-        int [] guessesArray = new int[10];
+        Scanner scanner = new Scanner(System.in);
         while (guessNumber != userNumber) {
-            Scanner scanner = new Scanner(System.in);
+
             System.out.println("Enter a number between 1 and 10");
             userNumber = scanner.nextInt();
 
             if (userNumber > guessNumber) {
                 System.out.println(userNumber + " is too large.");
-            } else if (userNumber < guessNumber) {
+            }
+            else if (userNumber < guessNumber) {
                 System.out.println(userNumber + " is too small.");
-            } else if (userNumber == guessNumber) {
+            }
+            else if (userNumber == guessNumber) {
                 System.out.println("You guessed correctly!");
             }
             numberGuesses++;
 
         }
         System.out.println("You guessed " + numberGuesses + " times.");
+        scanner.close();
     }
-
 }
